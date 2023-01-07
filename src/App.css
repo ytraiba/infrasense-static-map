@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.leaflet-container {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+}
+.logo{
+  position: relative;
+  display: absolute;
+  margin-top: 90vh;
+  margin-left: 5vh;
+  z-index: 1000;
+  width: fit-content;
+}
+.leaflet-control-zoom.leaflet-bar.leaflet-control{
+  margin-left: 20px;
+}
+.leaflet-interactive{
+  stroke: #51555e;
+  stroke-width: 2px;
+}
+.leaflet-popup-content{
+  margin: 4px 4px;
+  width: fit-content;
+  text-align: left;
+}
+.leaflet-popup-content-wrapper{
+  background-color: #E8E8E8;
+}
+a.leaflet-popup-close-button{
+  visibility: hidden;
+}
+li {
+  font-size: 12px;
+}
+h1{
+  font-size: 15px
+}
+.leaflet-popup-tip-container{
+  z-index: -999;
+  top: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
